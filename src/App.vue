@@ -32,7 +32,13 @@ import { findInitialPage } from "@/utils/sidenav";
   },
 })
 export default class App extends Vue {
-  elements = ["kubernetes", "vm", "deployedlist", "caprover"];
+  elements = [
+    "kubernetes",
+    "vm",
+    "deployedlist",
+    "caprover",
+    "farmingcalculator",
+  ];
   sidenav: ISidenav | null = null;
 
   created() {

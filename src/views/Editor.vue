@@ -26,10 +26,16 @@ export default class Editor extends Vue {
 ###### h6
 ---
 
+<tf-farming-calculator></tf-farming-calculator>
+---
 <tf-kubernetes></tf-kubernetes>
+
 <tf-vm></tf-vm>
+
 <tf-caprover></tf-caprover>
+
 <tf-deployedlist></tf-deployedlist>
+
 <tf-deployedlist tab="k8s"></tf-deployedlist>
   
   `;
@@ -54,7 +60,7 @@ export default class Editor extends Vue {
   display: flex;
 
   &__input {
-    width: 50%;
+    width: 20%;
     height: 100%;
     border: 1px solid #ccc;
 
@@ -72,7 +78,7 @@ export default class Editor extends Vue {
   }
 
   &__preview {
-    width: 50%;
+    width: 80%;
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
