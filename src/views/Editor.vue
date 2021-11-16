@@ -11,10 +11,10 @@
       </ul>
     </aside>
 
-    <div class="editor__content">
+    <div class="editor__content" v-if="active >= 0">
       <div v-html="weblets[active].html" />
     </div>
-    <div class="editor__area">
+    <div class="editor__area" v-if="active >= 0">
       <textarea spellcheck="false" v-model="weblets[active].md" />
     </div>
   </section>
@@ -57,7 +57,7 @@ export default class Editor extends Vue {
     new Weblet("CapRover", "caprover"),
     new Weblet("Farming Calculator", "farming-calculator"),
   ];
-  public active = 0;
+  public active = -1;
 }
 </script>
 
